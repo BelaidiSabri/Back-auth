@@ -17,11 +17,44 @@ export const getAllProducts = async (req: Request, res: Response): Promise<void>
     const page = parseInt(req.query.page as string) || 1;
     const limit = parseInt(req.query.limit as string) || 10;
     const skip = (page - 1) * limit;
-    
+
     const searchTerm = req.query.search as string || '';
 
+    // Initialize query as an indexable type
+    interface QueryType {
+        [key: string]: any;  // Allows any property with any MongoDB filter type
+    }
+    
+    let query: QueryType = {};
+
+    // Add search term to query if it exists
+    if (searchTerm) {
+        query['name'] = { $regex: searchTerm, $options: "i" };
+    }
+
+    // Define all possible filter fields
+    const filterFields = ['category', 'brand', 'color', 'priceMin', 'priceMax'];
+    
+    filterFields.forEach(field => {
+        const value = req.query[field];
+        if (value !== undefined) {
+            switch (field) {
+                case 'priceMin':
+                    if (!query['price']) query['price'] = {};
+                    query['price']['$gte'] = parseFloat(value as string);
+                    break;
+                case 'priceMax':
+                    if (!query['price']) query['price'] = {};
+                    query['price']['$lte'] = parseFloat(value as string);
+                    break;
+                default:
+                    query[field] = value;
+                    break;
+            }
+        }
+    });
+
     try {
-        const query = searchTerm ? { name: { $regex: searchTerm, $options: "i" } } : {};
         const products = await Product.find(query).skip(skip).limit(limit);
         const total = await Product.countDocuments(query);
 
@@ -35,6 +68,7 @@ export const getAllProducts = async (req: Request, res: Response): Promise<void>
         res.status(500).json({ message: error.message });
     }
 };
+
 
 
 
