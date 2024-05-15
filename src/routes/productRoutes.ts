@@ -8,12 +8,18 @@ import {
 } from '../controllers/productController';
 import verifyToken from '../middlwares/authmiddlware';
 import { paginationMiddleware } from '../middlwares/paginationMiddlware';
+import upload from '../config/multerConfig';
 
 const productRoutes = express.Router();
 
 // Route to create a new product
-productRoutes.post('/',verifyToken, createProduct);
+//productRoutes.post('/', createProduct);
 
+// Setup for multiple fields
+productRoutes.post('/', upload.fields([
+    { name: 'mainImage', maxCount: 1 },
+    { name: 'secondaryImages[]', maxCount: 5 }
+]), createProduct);
 // Route to retrieve all products
 productRoutes.get('/', paginationMiddleware, getAllProducts);
 

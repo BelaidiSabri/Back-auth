@@ -71,7 +71,14 @@ export const loginUser = async (req, res) => {
         });
 
         // Send the access token in the JSON response
-        res.json({ accessToken });
+        res.json({
+            user: {
+              id: user.id,
+              username: user.username,
+              role: user.role
+            },
+            accessToken
+          });
     } catch (error) {
         console.error(error);
         res.status(500).send('Error in logging in user.');
@@ -80,6 +87,8 @@ export const loginUser = async (req, res) => {
 
 export const refreshAccessToken = async (req, res) => {
     const refreshToken = req.cookies.refreshToken;
+    console.log('cookies are :', refreshToken);
+    
     if (!refreshToken) return res.status(401).json({ message: "Refresh Token is required!" });
 
     try {
@@ -91,7 +100,7 @@ export const refreshAccessToken = async (req, res) => {
     } catch (error) {
         console.error(error);
         // Clear the refreshToken cookie
-        res.clearCookie('refreshToken');
+       // res.clearCookie('refreshToken');
         res.status(403).json({ message: "Invalid Refresh Token" });
     }
 };
@@ -107,6 +116,34 @@ export const logout = async (req, res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({ message: 'Failed to log out', error: 'Internal Server Error' })
+    }
+}
+
+export const changePassword = async (req, res) => {
+    const userId = req.user.id; // Ensured by authentication middleware
+    const { currentPassword, newPassword } = req.body;
+
+    try {
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).send('User not found');
+        }
+
+        const passwordIsValid = await bcrypt.compare(currentPassword, user.password);
+        if (!passwordIsValid) {
+            return res.status(403).send('Current password is incorrect');
+        }
+
+        const salt = await bcrypt.genSalt(10);
+        const hashedNewPassword = await bcrypt.hash(newPassword, salt);
+
+        user.password = hashedNewPassword;
+        await user.save();
+
+        res.send('Password updated successfully');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
     }
 }
 

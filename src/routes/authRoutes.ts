@@ -1,6 +1,6 @@
 import express from 'express';
-import { loginUser, logout, refreshAccessToken, registerUser } from '../controllers/authController';
-import { getUserProfile } from '../controllers/userController';
+import { changePassword, loginUser, logout, refreshAccessToken, registerUser } from '../controllers/authController';
+import { getUserProfile, updateUserProfile } from '../controllers/userController';
 import verifyToken from '../middlwares/authmiddlware';
 
 
@@ -8,13 +8,18 @@ const router = express.Router();
 
 router.post('/register', registerUser);
 
-router.post('/login', loginUser);
+router.post('/signin', loginUser);
 
-router.post('/refresh_token', refreshAccessToken); 
+router.post('/refresh-token', refreshAccessToken); 
 
 router.get('/profile', verifyToken, getUserProfile);
 
+router.put('/profile', verifyToken, updateUserProfile);
+
 router.post('/logout', logout);
+
+router.post('/change-password',verifyToken, changePassword);
+
 
 
 

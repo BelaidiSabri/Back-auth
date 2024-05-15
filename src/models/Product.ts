@@ -1,88 +1,35 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const { Schema } = mongoose;
+const dimensionsSchema = new Schema({
+    depth: { type: Number },
+    width: { type: Number },
+    height: { type: Number },
+    unit: { type: String, default: 'cm' }
+});
 
 const productSchema = new Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    description: {
-        type: String
-    },
-    price: {
-        type: Number,
-        required: true,
-        min: 0
-    },
-    inStock: {
-        type: Boolean,
-        default: true
-    },
-    stockQuantity: {
-        type: Number,
-        required: true,
-        min: 0
-    },
-    categories: [{
-        //type: Schema.Types.ObjectId,
-        type: String,
-        //ref: 'Category'
-    }],
-    images: [{
-        type: String
-    }],
-    colors:[{
-        type: String
-    }],
+    name: { type: String, required: true },
+    description: { type: String },
+    price: { type: Number, required: true, min: 0 },
+    inStock: { type: Boolean, default: true },
+    stockQuantity: { type: Number, required: true, min: 0 },
+    subCategories: [{ type: Schema.Types.ObjectId, ref: 'Subcategory' }],
+    mainImage: { type: String },
+    secondaryImages: [{ type: String }],
+    colors: [{ type: String }],
     rating: {
-        average: {
-            type: Number,
-            default: 0,
-            min: 0,
-            max: 5
-        },
-        numberOfRatings: {
-            type: Number,
-            default: 0
-        }
+        average: { type: Number, default: 0, min: 0, max: 5 },
+        numberOfRatings: { type: Number, default: 0 }
     },
-    dimensions: {
-        length: Number,
-        width: Number,
-        height: Number,
-        unit: {
-            type: String,
-            default: 'cm'
-        }
-    },
+    dimensions: dimensionsSchema,
     weight: {
-        value: Number,
-        unit: {
-            type: String,
-            default: 'kg'
-        }
+        value: { type: Number },
+        unit: { type: String, default: 'kg' }
     },
-/*     seller: {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-        required: true,
-    }, */
-    brand: {
-        type: String,
-        required: true
-    },
+    brand: { type: String, required: true },
     promotion: {
         promoType: String,
-        promoValue: {
-            type: Number,
-            min: 0,   // Minimum discount of 0%
-            max: 100, // Maximum discount of 100%
-            validate: {
-                validator: Number.isInteger,
-                message: '{VALUE} is not an integer value'
-            }
-        },
+        promoValue: { type: Number, min: 0, max: 100 },
         startDate: Date,
         endDate: Date
     },
@@ -94,5 +41,4 @@ const productSchema = new Schema({
 });
 
 const Product = mongoose.model('Product', productSchema);
-
 export default Product;

@@ -1,0 +1,1439 @@
+{
+  "Electronics": {
+    "Mobile Phones": {
+      "Specifications": [
+        "Screen size",
+        "Resolution",
+        "Battery capacity",
+        "Processor",
+        "RAM",
+        "Storage",
+        "Camera quality",
+        "Operating system",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Tablets": {
+      "Specifications": [
+        "Screen size",
+        "Resolution",
+        "Battery life",
+        "Processor",
+        "RAM",
+        "Storage",
+        "Camera quality",
+        "Operating system",
+        "Connectivity options",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Laptops": {
+      "Specifications": [
+        "Screen size",
+        "Resolution",
+        "Processor",
+        "RAM",
+        "Storage",
+        "Battery life",
+        "Operating system",
+        "GPU",
+        "Weight",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Cameras": {
+      "Specifications": [
+        "Sensor type",
+        "Resolution (megapixels)",
+        "Lens options",
+        "ISO range",
+        "Shutter speed",
+        "Video resolution",
+        "Connectivity options",
+        "Battery life",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Headphones": {
+      "Specifications": [
+        "Type (over-ear, in-ear, on-ear)",
+        "Wireless/wired",
+        "Battery life (for wireless)",
+        "Sound quality",
+        "Noise cancellation",
+        "Connectivity options",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Wearable Technology": {
+      "Specifications": [
+        "Type (smartwatch, fitness tracker)",
+        "Battery life",
+        "Display type",
+        "Connectivity options",
+        "Health tracking features",
+        "Compatibility",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Televisions": {
+      "Specifications": [
+        "Screen size",
+        "Resolution",
+        "Display technology (LED, OLED, QLED)",
+        "Smart TV features",
+        "Connectivity options",
+        "Refresh rate",
+        "HDR support",
+        "Price range"
+      ]
+    },
+    "Home Audio": {
+      "Specifications": [
+        "Speaker type (soundbar, home theater system, portable speaker)",
+        "Connectivity options",
+        "Sound quality",
+        "Power output",
+        "Compatibility",
+        "Price range"
+      ]
+    },
+    "Gaming Consoles": {
+      "Specifications": [
+        "Processor",
+        "GPU",
+        "RAM",
+        "Storage",
+        "Supported resolutions",
+        "Connectivity options",
+        "Exclusive games",
+        "Price range"
+      ]
+    },
+    "Accessories": {
+      "Specifications": [
+        "Type",
+        "Compatibility",
+        "Functionality",
+        "Price range"
+      ]
+    }
+  },
+  "Computer": {
+    "Desktops": {
+      "Specifications": [
+        "Processor",
+        "RAM",
+        "Storage",
+        "GPU",
+        "Operating system",
+        "Connectivity options",
+        "Form factor",
+        "Price range"
+      ]
+    },
+    "Laptops": {
+      "Specifications": [
+        "Screen size",
+        "Resolution",
+        "Processor",
+        "RAM",
+        "Storage",
+        "Battery life",
+        "Operating system",
+        "GPU",
+        "Weight",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Monitors": {
+      "Specifications": [
+        "Screen size",
+        "Resolution",
+        "Refresh rate",
+        "Panel type",
+        "Connectivity options",
+        "Adjustability",
+        "Price range"
+      ]
+    },
+    "Computer Components": {
+      "Specifications": [
+        "Component type (CPU, GPU, RAM, etc.)",
+        "Compatibility",
+        "Performance",
+        "Price range"
+      ]
+    },
+    "Storage Devices": {
+      "Specifications": [
+        "Type (HDD, SSD)",
+        "Capacity",
+        "Form factor",
+        "Interface",
+        "Read/Write speed",
+        "Price range"
+      ]
+    },
+    "Networking Products": {
+      "Specifications": [
+        "Type (Router, Modem, Switch, etc.)",
+        "Speed",
+        "Connectivity options",
+        "Coverage",
+        "Price range"
+      ]
+    },
+    "Printers & Scanners": {
+      "Specifications": [
+        "Type (Inkjet, Laser, All-in-One, etc.)",
+        "Print quality",
+        "Scan quality",
+        "Connectivity options",
+        "Speed",
+        "Price range"
+      ]
+    },
+    "Computer Accessories": {
+      "Specifications": [
+        "Type (Keyboard, Mouse, etc.)",
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Software": {
+      "Specifications": [
+        "Type (Operating system, Security, Office, etc.)",
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    }
+  },
+  "Smart Home": {
+    "Smart Lighting": {
+      "Specifications": [
+        "Type (bulb, strip, etc.)",
+        "Connectivity options",
+        "Color options",
+        "Brightness",
+        "Smart assistant compatibility",
+        "Price range"
+      ]
+    },
+    "Smart Thermostats": {
+      "Specifications": [
+        "Compatibility",
+        "Control options",
+        "Energy saving features",
+        "Smart assistant compatibility",
+        "Price range"
+      ]
+    },
+    "Smart Security": {
+      "Specifications": [
+        "Type (camera, alarm, etc.)",
+        "Connectivity options",
+        "Smart assistant compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Smart Appliances": {
+      "Specifications": [
+        "Type (fridge, oven, etc.)",
+        "Smart features",
+        "Connectivity options",
+        "Energy efficiency",
+        "Price range"
+      ]
+    },
+    "Smart Speakers": {
+      "Specifications": [
+        "Audio quality",
+        "Smart assistant compatibility",
+        "Connectivity options",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Home Automation Systems": {
+      "Specifications": [
+        "Compatibility",
+        "Control options",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Smart Plugs": {
+      "Specifications": [
+        "Connectivity options",
+        "Control options",
+        "Energy monitoring",
+        "Smart assistant compatibility",
+        "Price range"
+      ]
+    },
+    "Smart Cameras": {
+      "Specifications": [
+        "Resolution",
+        "Field of view",
+        "Connectivity options",
+        "Smart assistant compatibility",
+        "Features",
+        "Price range"
+      ]
+    }
+  },
+  "Arts & Crafts": {
+    "Painting": {
+      "Specifications": [
+        "Type (acrylic, oil, watercolor, etc.)",
+        "Colors available",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Drawing": {
+      "Specifications": [
+        "Type (pencils, charcoal, etc.)",
+        "Colors available",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Sewing": {
+      "Specifications": [
+        "Type (machine, hand tools)",
+        "Features",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Knitting & Crochet": {
+      "Specifications": [
+        "Type (needles, hooks, yarn)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Craft Kits": {
+      "Specifications": [
+        "Type of craft",
+        "Included materials",
+        "Skill level",
+        "Price range"
+      ]
+    },
+    "Jewelry Making": {
+      "Specifications": [
+        "Type (beads, wires, tools)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Paper Crafting": {
+      "Specifications": [
+        "Type (scrapbooking, card making, etc.)",
+        "Included materials",
+        "Skill level",
+        "Price range"
+      ]
+    },
+    "Sculpture": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Tools included",
+        "Price range"
+      ]
+    }
+  },
+  "Automotive": {
+    "Car Electronics": {
+      "Specifications": [
+        "Type (stereo, GPS, etc.)",
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Car Accessories": {
+      "Specifications": [
+        "Type (covers, mats, etc.)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Car Care": {
+      "Specifications": [
+        "Type (cleaning, polishing, etc.)",
+        "Included materials",
+        "Price range"
+      ]
+    },
+    "Motorcycle & Powersports": {
+      "Specifications": [
+        "Type (helmets, accessories, etc.)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Replacement Parts": {
+      "Specifications": [
+        "Type (engine, brakes, etc.)",
+        "Compatibility",
+        "Quality",
+        "Price range"
+      ]
+    },
+    "Tools & Equipment": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Tires & Wheels": {
+      "Specifications": [
+        "Type",
+        "Size",
+        "Material",
+        "Price range"
+      ]
+    }
+  },
+  "Baby": {
+    "Baby Clothing": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Baby Furniture": {
+      "Specifications": [
+        "Type (cribs, changing tables, etc.)",
+        "Material",
+        "Size",
+        "Safety features",
+        "Price range"
+      ]
+    },
+    "Baby Gear": {
+      "Specifications": [
+        "Type (strollers, car seats, etc.)",
+        "Safety features",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Baby Feeding": {
+      "Specifications": [
+        "Type (bottles, high chairs, etc.)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Diapering": {
+      "Specifications": [
+        "Type (diapers, wipes, etc.)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Baby Toys": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Age range",
+        "Safety features",
+        "Price range"
+      ]
+    },
+    "Baby Bathing": {
+      "Specifications": [
+        "Type (bathtubs, towels, etc.)",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Baby Safety": {
+      "Specifications": [
+        "Type (gates, monitors, etc.)",
+        "Material",
+        "Size",
+        "Safety features",
+        "Price range"
+      ]
+    }
+  },
+  "Beauty and Personal Care": {
+    "Skincare": {
+      "Specifications": [
+        "Type (cream, serum, etc.)",
+        "Ingredients",
+        "Skin type",
+        "Benefits",
+        "Price range"
+      ]
+    },
+    "Haircare": {
+      "Specifications": [
+        "Type (shampoo, conditioner, etc.)",
+        "Ingredients",
+        "Hair type",
+        "Benefits",
+        "Price range"
+      ]
+    },
+    "Makeup": {
+      "Specifications": [
+        "Type (foundation, mascara, etc.)",
+        "Ingredients",
+        "Skin type",
+        "Shades available",
+        "Price range"
+      ]
+    },
+    "Fragrance": {
+      "Specifications": [
+        "Type (perfume, eau de toilette, etc.)",
+        "Scent",
+        "Ingredients",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Personal Care Appliances": {
+      "Specifications": [
+        "Type (hair dryer, electric shaver, etc.)",
+        "Features",
+        "Power source",
+        "Price range"
+      ]
+    },
+    "Men's Grooming": {
+      "Specifications": [
+        "Type (razor, trimmer, etc.)",
+        "Features",
+        "Power source",
+        "Price range"
+      ]
+    },
+    "Oral Care": {
+      "Specifications": [
+        "Type (toothbrush, floss, etc.)",
+        "Features",
+        "Ingredients",
+        "Price range"
+      ]
+    },
+    "Bath & Body": {
+      "Specifications": [
+        "Type (body wash, lotion, etc.)",
+        "Ingredients",
+        "Skin type",
+        "Benefits",
+        "Price range"
+      ]
+    }
+  },
+  "Women Fashion": {
+    "Clothing": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Shoes": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Jewelry": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Watches": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Handbags": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Accessories": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    }
+  },
+  "Men Fashion": {
+    "Clothing": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Shoes": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Jewelry": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Watches": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Handbags": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Accessories": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    }
+  },
+  "Girl Fashion": {
+    "Clothing": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Shoes": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Jewelry": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Watches": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Handbags": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Accessories": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    }
+  },
+  "Boy Fashion": {
+    "Clothing": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Shoes": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Jewelry": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Watches": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Handbags": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    },
+    "Accessories": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Color",
+        "Price range"
+      ]
+    }
+  },
+  "Health and Household": {
+    "Vitamins & Supplements": {
+      "Specifications": [
+        "Type",
+        "Ingredients",
+        "Benefits",
+        "Price range"
+      ]
+    },
+    "Medical Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Household Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Personal Care": {
+      "Specifications": [
+        "Type",
+        "Ingredients",
+        "Benefits",
+        "Price range"
+      ]
+    },
+    "Health Care": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Nutrition & Wellness": {
+      "Specifications": [
+        "Type",
+        "Ingredients",
+        "Benefits",
+        "Price range"
+      ]
+    },
+    "Baby & Child Care": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    }
+  },
+  "Home and Kitchen": {
+    "Furniture": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Home Decor": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Bedding": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Bath": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Kitchen & Dining": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Storage & Organization": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Appliances": {
+      "Specifications": [
+        "Type",
+        "Features",
+        "Power source",
+        "Price range"
+      ]
+    },
+    "Cleaning Supplies": {
+      "Specifications": [
+        "Type",
+        "Ingredients",
+        "Size",
+        "Price range"
+      ]
+    }
+  },
+  "Industrial and Scientific": {
+    "Lab & Scientific Products": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Industrial Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Professional Medical Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Occupational Health & Safety": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Power & Hand Tools": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Power source",
+        "Price range"
+      ]
+    },
+    "Janitorial & Sanitation Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    }
+  },
+  "Luggage": {
+    "Carry-Ons": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Suitcases": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Backpacks": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Travel Accessories": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Laptop Bags": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Luggage Sets": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    },
+    "Kids' Luggage": {
+      "Specifications": [
+        "Material",
+        "Size",
+        "Weight",
+        "Price range"
+      ]
+    }
+  },
+  "Movie & Television": {
+    "DVDs": {
+      "Specifications": [
+        "Genre",
+        "Length",
+        "Rating",
+        "Price range"
+      ]
+    },
+    "Blu-ray": {
+      "Specifications": [
+        "Genre",
+        "Length",
+        "Rating",
+        "Price range"
+      ]
+    },
+    "Streaming Media Players": {
+      "Specifications": [
+        "Features",
+        "Compatibility",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Home Theater Systems": {
+      "Specifications": [
+        "Components",
+        "Features",
+        "Power output",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Projectors": {
+      "Specifications": [
+        "Resolution",
+        "Brightness",
+        "Contrast ratio",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "TV Accessories": {
+      "Specifications": [
+        "Type",
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    }
+  },
+  "Pet Supplies": {
+    "Dog Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Cat Supplies": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Fish & Aquatic Pets": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Small Animals": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Birds": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Reptiles & Amphibians": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Pet Food": {
+      "Specifications": [
+        "Type",
+        "Ingredients",
+        "Nutritional value",
+        "Price range"
+      ]
+    },
+    "Pet Grooming": {
+      "Specifications": [
+        "Type",
+        "Ingredients",
+        "Size",
+        "Price range"
+      ]
+    }
+  },
+  "Software": {
+    "Operating Systems": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Security Software": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Office Software": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Graphic Design": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Accounting & Finance": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Education & Reference": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Utility Software": {
+      "Specifications": [
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    }
+  },
+  "Sport and Outdoors": {
+    "Exercise & Fitness": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Outdoor Recreation": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Team Sports": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Water Sports": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Winter Sports": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Fan Shop": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Sports Accessories": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    }
+  },
+  "Tools and Home Improvement": {
+    "Power Tools": {
+      "Specifications": [
+        "Type",
+        "Power source",
+        "Features",
+        "Price range"
+      ]
+    },
+    "Hand Tools": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Hardware": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Lighting": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Electrical": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Plumbing": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Safety & Security": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    },
+    "Kitchen & Bath Fixtures": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Price range"
+      ]
+    }
+  },
+  "Toys and Games": {
+    "Action Figures": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Dolls": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Building Toys": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Learning & Education": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Games & Puzzles": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Outdoor Play": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Stuffed Animals": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    },
+    "Vehicles": {
+      "Specifications": [
+        "Type",
+        "Material",
+        "Size",
+        "Age range",
+        "Price range"
+      ]
+    }
+  },
+  "Video Games": {
+    "PlayStation": {
+      "Specifications": [
+        "Console type",
+        "Games available",
+        "Storage options",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Xbox": {
+      "Specifications": [
+        "Console type",
+        "Games available",
+        "Storage options",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Nintendo": {
+      "Specifications": [
+        "Console type",
+        "Games available",
+        "Storage options",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "PC Gaming": {
+      "Specifications": [
+        "Games available",
+        "Hardware requirements",
+        "Storage options",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Virtual Reality": {
+      "Specifications": [
+        "Headset type",
+        "Games available",
+        "Hardware requirements",
+        "Connectivity options",
+        "Price range"
+      ]
+    },
+    "Gaming Accessories": {
+      "Specifications": [
+        "Type",
+        "Compatibility",
+        "Features",
+        "Price range"
+      ]
+    }
+  }
+}

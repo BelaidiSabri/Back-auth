@@ -1,0 +1,119 @@
+{
+    "Electronics": {
+      "Mobile Phones": {
+        "Specifications": {
+          "Screen size": ["5.5 inches", "6.1 inches", "6.7 inches"],
+          "Resolution": ["1080p", "1440p", "2160p"],
+          "Battery capacity": ["3000mAh", "4000mAh", "5000mAh"],
+          "Processor": ["Snapdragon 888", "Apple A14 Bionic", "Exynos 2100"],
+          "RAM": ["4GB", "6GB", "8GB"],
+          "Storage": ["64GB", "128GB", "256GB"],
+          "Camera quality": ["12MP", "48MP", "108MP"],
+          "Operating system": ["Android", "iOS"],
+          "Connectivity options": ["5G", "WiFi 6", "Bluetooth 5.0"],
+          "Price range": ["$300-$500", "$500-$700", "$700-$1000"]
+        }
+      },
+      "Tablets": {
+        "Specifications": {
+          "Screen size": ["8 inches", "10 inches", "12.9 inches"],
+          "Resolution": ["1080p", "1440p", "2160p"],
+          "Battery life": ["8 hours", "10 hours", "12 hours"],
+          "Processor": ["Apple M1", "Snapdragon 870", "MediaTek Helio G90"],
+          "RAM": ["4GB", "6GB", "8GB"],
+          "Storage": ["64GB", "128GB", "256GB"],
+          "Camera quality": ["8MP", "12MP", "13MP"],
+          "Operating system": ["Android", "iPadOS"],
+          "Connectivity options": ["WiFi", "4G LTE", "5G"],
+          "Weight": ["400g", "500g", "600g"],
+          "Price range": ["$200-$400", "$400-$600", "$600-$800"]
+        }
+      },
+      "Laptops": {
+        "Specifications": {
+          "Screen size": ["13 inches", "15 inches", "17 inches"],
+          "Resolution": ["1080p", "1440p", "4K"],
+          "Processor": ["Intel i5", "Intel i7", "AMD Ryzen 7"],
+          "RAM": ["8GB", "16GB", "32GB"],
+          "Storage": ["256GB SSD", "512GB SSD", "1TB SSD"],
+          "Battery life": ["8 hours", "10 hours", "12 hours"],
+          "Operating system": ["Windows 10", "macOS", "Linux"],
+          "GPU": ["Integrated", "NVIDIA GTX 1660", "NVIDIA RTX 3070"],
+          "Weight": ["1.5kg", "2kg", "2.5kg"],
+          "Connectivity options": ["WiFi 6", "Bluetooth 5.0", "Thunderbolt 3"],
+          "Price range": ["$500-$1000", "$1000-$1500", "$1500-$2000"]
+        }
+      }
+    },
+    "Computer": {
+      "Desktops": {
+        "Specifications": {
+          "Processor": ["Intel i5", "Intel i7", "AMD Ryzen 7"],
+          "RAM": ["8GB", "16GB", "32GB"],
+          "Storage": ["256GB SSD", "512GB SSD", "1TB SSD"],
+          "GPU": ["NVIDIA GTX 1660", "NVIDIA RTX 3070", "AMD Radeon RX 6800"],
+          "Operating system": ["Windows 10", "Linux"],
+          "Connectivity options": ["WiFi", "Ethernet", "Bluetooth"],
+          "Form factor": ["Mini", "Mid Tower", "Full Tower"],
+          "Price range": ["$600-$1000", "$1000-$1500", "$1500-$2000"]
+        }
+      },
+      "Laptops": {
+        "Specifications": {
+          "Screen size": ["13 inches", "15 inches", "17 inches"],
+          "Resolution": ["1080p", "1440p", "4K"],
+          "Processor": ["Intel i5", "Intel i7", "AMD Ryzen 7"],
+          "RAM": ["8GB", "16GB", "32GB"],
+          "Storage": ["256GB SSD", "512GB SSD", "1TB SSD"],
+          "Battery life": ["8 hours", "10 hours", "12 hours"],
+          "Operating system": ["Windows 10", "macOS", "Linux"],
+          "GPU": ["Integrated", "NVIDIA GTX 1660", "NVIDIA RTX 3070"],
+          "Weight": ["1.5kg", "2kg", "2.5kg"],
+          "Connectivity options": ["WiFi 6", "Bluetooth 5.0", "Thunderbolt 3"],
+          "Price range": ["$500-$1000", "$1000-$1500", "$1500-$2000"]
+        }
+      },
+      "Monitors": {
+        "Specifications": {
+          "Screen size": ["24 inches", "27 inches", "32 inches"],
+          "Resolution": ["1080p", "1440p", "4K"],
+          "Refresh rate": ["60Hz", "120Hz", "144Hz"],
+          "Panel type": ["IPS", "VA", "TN"],
+          "Connectivity options": ["HDMI", "DisplayPort", "USB-C"],
+          "Adjustability": ["Tilt", "Height", "Swivel"],
+          "Price range": ["$150-$300", "$300-$500", "$500-$700"]
+        }
+      }
+    },
+    "Smart Home": {
+      "Smart Lighting": {
+        "Specifications": {
+          "Type": ["bulb", "strip", "lamp"],
+          "Connectivity options": ["WiFi", "Bluetooth", "Zigbee"],
+          "Color options": ["White", "RGB", "Tunable White"],
+          "Brightness": ["800 lumens", "1000 lumens", "1500 lumens"],
+          "Smart assistant compatibility": ["Alexa", "Google Assistant", "Siri"],
+          "Price range": ["$20-$50", "$50-$100", "$100-$150"]
+        }
+      },
+      "Smart Thermostats": {
+        "Specifications": {
+          "Compatibility": ["HVAC", "Radiant Floor", "Heat Pump"],
+          "Control options": ["App", "Voice", "Manual"],
+          "Energy saving features": ["Eco Mode", "Learning Mode", "Scheduling"],
+          "Smart assistant compatibility": ["Alexa", "Google Assistant", "Siri"],
+          "Price range": ["$100-$150", "$150-$200", "$200-$300"]
+        }
+      },
+      "Smart Security": {
+        "Specifications": {
+          "Type": ["camera", "alarm", "doorbell"],
+          "Connectivity options": ["WiFi", "Ethernet", "Z-Wave"],
+          "Smart assistant compatibility": ["Alexa", "Google Assistant", "Siri"],
+          "Features": ["Night Vision", "Motion Detection", "Two-Way Audio"],
+          "Price range": ["$50-$100", "$100-$200", "$200-$300"]
+        }
+      }
+    }
+  }
+  

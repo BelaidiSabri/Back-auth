@@ -1,16 +1,39 @@
 import { Request, Response } from 'express';
 import Product from '../models/Product'; // Ensure your Product model is also converted to TypeScript
 
-// Create a new product
+
+// Assuming 'req.files' is properly typed by your Multer setup
+interface MulterRequest extends Request {
+    files: {
+        [fieldname: string]: Express.Multer.File[];
+    } | undefined;
+}
+
 export const createProduct = async (req: Request, res: Response): Promise<void> => {
     try {
-        const product = new Product(req.body);
+        const multerRequest = req as MulterRequest; // Cast req to the custom MulterRequest type
+        const files = multerRequest.files;
+        
+        const mainImage = files?.mainImage ? `http://${req.headers.host}/uploads/${files.mainImage[0].filename}` : null;
+        const secondaryImages = files?.['secondaryImages[]'] ? files['secondaryImages[]'].map(file => `http://${req.headers.host}/uploads/${file.filename}`) : [];
+
+        const productData = {
+            ...req.body,
+            mainImage: mainImage,
+            secondaryImages: secondaryImages
+        };
+
+        const product = new Product(productData);
         await product.save();
-        res.status(201).json(product);
+
+        const populatedProduct = await Product.findById(product._id).populate('subCategories');
+        res.status(201).json(populatedProduct);
     } catch (error: any) {
+        console.error('Failed to create product:', error.message);
         res.status(400).json({ message: error.message });
     }
 };
+
 
 // Retrieve all products with pagination and optional search
 export const getAllProducts = async (req: Request, res: Response): Promise<void> => {
@@ -33,9 +56,10 @@ export const getAllProducts = async (req: Request, res: Response): Promise<void>
     }
 
     // Define all possible filter fields
-    const filterFields = ['category', 'brand', 'color', 'priceMin', 'priceMax'];
+    const filterFields = ['subCategories', 'brand', 'color', 'priceMin', 'priceMax'];
     
     filterFields.forEach(field => {
+
         const value = req.query[field];
         if (value !== undefined) {
             switch (field) {
