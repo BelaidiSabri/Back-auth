@@ -6,19 +6,19 @@ import verifyToken from '../middlwares/authmiddlware';
 
 const router = express.Router();
 
-router.post('/register', registerUser);
+router.post('/supplier/register', registerUser);
 
-router.post('/signin', loginUser);
+router.post('/user/signin', loginUser);
 
-router.post('/refresh-token', refreshAccessToken); 
+router.post('/user/refresh-token', refreshAccessToken); 
 
-router.get('/profile', verifyToken, getUserProfile);
+router.get('/user/profile', verifyToken, getUserProfile);
 
-router.put('/profile', verifyToken, updateUserProfile);
+router.put('/user/profile', verifyToken, updateUserProfile);
 
-router.post('/logout', logout);
+router.post('/user/logout', logout);
 
-router.post('/change-password',verifyToken, changePassword);
+router.post('/user/change-password',verifyToken, changePassword);
 
 
 

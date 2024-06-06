@@ -8,11 +8,11 @@ export const registerUser = async (req, res) => {
 
     interface JwtPayload {
         id: string;
-        username: string;
+        fullName: string;
         role: string;
     }
     try {
-        const { username, email, password, role } = req.body;
+        const { fullName, email, password, role } = req.body;
         // Check if user exists
         const existingUser = await User.findOne({ email });
         if (existingUser) {
@@ -22,10 +22,10 @@ export const registerUser = async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
         // Create a new user
-        const user = new User({ username, email, password: hashedPassword, role });
+        const user = new User({ fullName, email, password: hashedPassword, role });
         await user.save();
         // Optional: Generate Tokens if you want to log the user in immediately after registration
-        const accessToken = generateAccessToken({ id: user.id, username: user.username, role: user.role });
+        const accessToken = generateAccessToken({ id: user.id, fullName: user.fullName, role: user.role });
         const refreshToken = generateRefreshToken({ id: user.id, role: user.role });
         // Set the refresh token in an HttpOnly cookie
         res.cookie('refreshToken', refreshToken, {
@@ -45,36 +45,39 @@ export const registerUser = async (req, res) => {
 
 export const loginUser = async (req, res) => {
     try {
-        const { email, password } = req.body;
+        const { email, password,rememberMe } = req.body;
 
         // Check if user exists
         const user = await User.findOne({ email });
         if (!user) {
-            return res.status(400).send('Invalid email or password.');
+            //return res.status(400).send('Invalid email or password.');
+            return res.status(401).json({"success":false,"message":"Incorrect password.","error":"Password mismatch"});
         }
 
         // Check password
         const validPassword = await bcrypt.compare(password, user.password);
         if (!validPassword) {
-            return res.status(400).send('Invalid email or password.');
+//            return res.status(400).send('Invalid email or password.');
+            return res.status(401).json({"success":false,"message":"Incorrect password.","error":"Password mismatch"});
+
         }
 
         // Generate Tokens
-        const accessToken = generateAccessToken({ id: user.id, username: user.username, role: user.role });
+        const accessToken = generateAccessToken({ id: user.id, fullName: user.fullName, role: user.role });
         const refreshToken = generateRefreshToken({ id: user.id, role: user.role });
         // Set the refresh token in an HttpOnly cookie
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production', // Set to true in production
             sameSite: 'strict',
-            maxAge: 24 * 60 * 60 * 1000 // 1 day
+            maxAge: rememberMe ? 24 * 60 * 60 * 1000 : null
         });
 
         // Send the access token in the JSON response
         res.json({
             user: {
               id: user.id,
-              username: user.username,
+              fullName: user.fullName,
               role: user.role
             },
             accessToken
@@ -95,13 +98,13 @@ export const refreshAccessToken = async (req, res) => {
         // Verify the refresh token
         const userData = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET!) as JwtPayload;
         // Generate a new access token
-        const newAccessToken = generateAccessToken({ id: userData.id, username: userData.username, role: userData.role });
+        const newAccessToken = generateAccessToken({ id: userData.id, fullName: userData.fullName, role: userData.role });
         res.json({ accessToken: newAccessToken });
     } catch (error) {
         console.error(error);
         // Clear the refreshToken cookie
        // res.clearCookie('refreshToken');
-        res.status(403).json({ message: "Invalid Refresh Token" });
+        res.status(401).json({ message: "Invalid Refresh Token" });
     }
 };
 
